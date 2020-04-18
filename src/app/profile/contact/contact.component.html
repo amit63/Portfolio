@@ -1,5 +1,5 @@
 <div class="section" id="contact">
-        <div class="cc-contact-information" style="background-image: url('assets/images/contact.jpg');">
+        <div class="cc-contact-information" style="background-image: url('assets/images/top.jpg');">
           <div class="container">
             <div class="cc-contact">
               <div class="row">
@@ -9,9 +9,9 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="card-body">
-                          <form name="form" (ngSubmit)="f.form.valid ; f.resetForm()" #f="ngForm" novalidate>
+                          <form name="form" method="post" action="https://formspree.io/mzbalbnl">
                             <div class="p pb-3">
-                              <strong>Feel free to contact me </strong>
+                              <strong>Let's get in Touch</strong>
                             </div>
                             <div class="row mb-3">
                               <div class="col">
@@ -19,9 +19,7 @@
                                   <span class="input-group-addon">
                                     <i class="fa fa-user-circle"></i>
                                   </span>
-                                  <input class="form-control" type="text" name="name" placeholder="Name"
-                                    [(ngModel)]="model.name" #name="ngModel"
-                                    [ngClass]="{ 'is-invalid': f.submitted && name.invalid }" required />
+                                  <input class="form-control" type="text" name="name" placeholder="Name"/>
                                 </div>
                               </div>
                             </div>
@@ -31,9 +29,7 @@
                                   <span class="input-group-addon">
                                     <i class="fa fa-file-text"></i>
                                   </span>
-                                  <input class="form-control" type="text" name="subject" placeholder="Subject"
-                                    [(ngModel)]="model.subject" #subject="ngModel"
-                                    [ngClass]="{ 'is-invalid': f.submitted && subject.invalid }" required />
+                                  <input class="form-control" type="text" name="subject" placeholder="Subject"/>
                                 </div>
                               </div>
                             </div>
@@ -43,28 +39,28 @@
                                   <span class="input-group-addon">
                                     <i class="fa fa-envelope"></i>
                                   </span>
-                                  <input class="form-control" type="text" name="email" placeholder="E-mail"
-                                    [(ngModel)]="model.email" #email="ngModel"
-                                    [ngClass]="{ 'is-invalid': f.submitted && email.invalid }"
-                                    pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required />
+                                  <input class="form-control" type="text" name="email" placeholder="E-mail"/>
                                 </div>
                               </div>
                             </div>
                             <div class="row mb-3">
                               <div class="col">
                                 <div class="form-group">
-                                  <textarea class="form-control" name="message" placeholder="Your Message"
-                                    [(ngModel)]="model.message" #message="ngModel"
-                                    [ngClass]="{ 'is-invalid': f.submitted && message.invalid }" required></textarea>
+                                  <textarea class="form-control" name="message" id="message" placeholder="Your Message"
+                                    ></textarea>
                                 </div>
                               </div>
                             </div>
                             <div class="row">
                               <div class="col">
-                                <button class="btn btn-primary" type="submit">Send</button>
-                              </div>
+                                <input type="submit" class="btn btn-primary" value="Send" />
+                                </div>
+                                <div class="col">
+                                  <input type="reset" class="btn btn-primary" value="Reset" />
+                                  </div>
                             </div>
                           </form>
+                          
                         </div>
                       </div>
                       <div class="col-md-6">
@@ -72,11 +68,11 @@
                           <p class="mb-0">
                             <strong>Phone</strong>
                           </p>
-                          <p class="pb-2">+91 9974990993</p>
+                          <p class="pb-2">+1-214-551-2825</p>
                           <p class="mb-0">
                             <strong>Email</strong>
                           </p>
-                          <p>mehulkothari05@gmail.com</p>
+                          <p>amitesh.mathur95@gmail.com</p>
                         </div>
                       </div>
                     </div>
